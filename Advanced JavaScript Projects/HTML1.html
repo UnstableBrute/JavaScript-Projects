@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="JavaScipt/JavaScript1.js"></script>
+</head>
+
+<body>
+    <h3> Choose a number from 1 - 10</h3>
+    <input type="number" id="switchInput">
+    <button onclick="switchFunction()">Submit your answer</button>
+    <p id="switchOutput"></p>
+    <hr>
+    <p class="classOut">First sentence for the class</p>
+    <p class="classOut">Second sentence for the class</p>
+    <p class="classOut">Third sentence for the class</p>
+    <p class="classOut">Forth sentence for the class</p>
+    <button onclick="classFunction()">CLick here to activate the class function.</button>
+    <hr>
+    <canvas id="graphic" height="360px" width="640px" style="border: 3px solid black;"></canvas>
+    <script>
+        //not certain how to get this script to work on the javascript file
+        const c = document.getElementById("graphic");
+        const ctx = c.getContext("2d");
+        const grd = ctx.createLinearGradient(0, 0, 640, 360);
+        grd.addColorStop(0, "white");
+        grd.addColorStop(1, "black");
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, 640, 360);
+    </script>
+</body>
+
+</html>

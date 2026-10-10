@@ -1,0 +1,63 @@
+/*form container*/
+.formContainer{
+    display: block;
+    width: 500px;
+}
+
+/*input form styling*/
+input, textarea{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: grey;
+    padding: 2px;
+    margin: 3px;
+    border: black solid 2px;
+    border-radius: 4px;
+    outline: none;
+    transition: ease 0.5s;
+}
+input[type="text"]{
+    width: 50%;
+}
+input[type="email"]{
+    width: 100%;
+}
+
+/*input hover effect*/
+input:hover, textarea:hover{
+    border-color: grey;
+    transition: ease 0.75s;
+}
+
+/*input focused effect*/
+input:focus, textarea:focus{
+    color: black;
+    border-color: grey;
+}
+
+/*textarea sizings*/
+textarea{
+    field-sizing: content;
+    resize: none;
+    min-height: 60px;
+    width: 100%;
+}
+
+/*submit styling*/
+input[type="submit"]{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: grey;
+    padding: 2px;
+    margin: 3px;
+    border: black solid 2px;
+    border-radius: 4px;
+    outline: none;
+    transition: ease 0.5s;
+}
+input[type="submit"]:hover{
+    border-color: grey;
+    transition: ease 0.75s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
